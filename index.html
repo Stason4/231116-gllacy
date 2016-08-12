@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-  	<header main-header>
+  	<header class="main-header">
   		<div class="logo">
   			<img src="http://placehold.it/150x100">
   		</div>
@@ -14,12 +14,12 @@
   				<ul>
   					<li>
   						<span class="catalog">Каталог</span>
-  						<ul>
+  						<ul class="navigation-submenu">
   							<li>
   								<a href="#" class="catalogue-novelty">Новинки</a>
   							</li>
   							<li>
-  								<a href="#">Сливочное</a>
+  								<a href="catalog.html">Сливочное</a>
   							</li>
   							<li>
   								<a href="#">Щербеты</a>
@@ -41,65 +41,73 @@
   				</ul>
   			</nav>
   			<div class="user-block">
-            <a class="search" href="#"></a>
-            <a class="login" href="#">Вход</a>
-            <a class="cart" href="#"></a>
-  				<p>С 10 до 20, ежедневно
-  				<b>8 812 450-25-25</b></p>
+          <ul>
+            <li>
+              <a class="search" href="#"></a>
+              <div class="inside-search">
+                <input type="text" name="search" placeholder="Что ищем?">  
+              </div>
+            </li>
+            <li>  
+              <a class="login" href="#">Вход</a>
+              <div class="inside-login">
+                <form action="/" method="post">
+                  <input type="text" name="login" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <input type="submit" name="entry" value="Войти">
+                  <a class="forgot-password" href="#">Забыли пароль?</a>
+                  <a class="new-registration" href="#">Новая регистрация</a>
+                </form>
+              </div>
+            </li>
+            <li>
+              <a class="cart" href="#"></a>
+              <div class="inside-cart">
+                <table>
+                  <caption>Итого: 750 руб.</caption>
+                  <tr>
+                    <td>
+                      <img src="http://placehold.it/15x15">
+                    </td>
+                    <td>
+                      <img src="http://placehold.it/15x15">
+                    </td>
+                    <td>
+                      Пломбир с апельсиновым джемом
+                    </td>
+                    <td>
+                      1,5 кг x 200 руб
+                    </td>
+                    <td>
+                      300 руб.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="http://placehold.it/15x15">
+                    </td>
+                    <td>
+                      <img src="http://placehold.it/15x15">
+                    </td>
+                    <td>
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td>
+                      1,5 кг x 300 руб
+                    </td>
+                    <td>
+                      450 руб.
+                    </td>
+                  </tr>
+                </table>
+                <a class="cart-btn" href="#">Оформить заказ</a>
+              </div>
+            </li>
+          </ul>  
   			</div>
+          <p class="header-schedule">С 10 до 20, ежедневно
+          <b class="header-phone">8 812 450-25-25</b></p>
   		</div>
-      <div class="inside-search">
-        <input type="text" name="search" placeholder="Что ищем?">
-      </div>
-      <div class="inside-login">
-        <form action="/" method="post">
-          <input type="text" name="login" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <input type="submit" name="entry" value="Войти">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </form>
-      </div>
-      <div class="inside-cart">
-        <table>
-          <caption>Итого: 750 руб.</caption>
-          <tr>
-            <td>
-              <img src="http://placehold.it/15x15">
-            </td>
-            <td>
-              <img src="http://placehold.it/15x15">
-            </td>
-            <td>
-              Пломбир с апельсиновым джемом
-            </td>
-            <td>
-              1,5 кг x 200 руб
-            </td>
-            <td>
-              300 руб.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="http://placehold.it/15x15">
-            </td>
-            <td>
-              <img src="http://placehold.it/15x15">
-            </td>
-            <td>
-              Клубничный пломбир с присыпкой из белого шоколада
-            </td>
-            <td>
-              1,5 кг x 300 руб
-            </td>
-            <td>
-              450 руб.
-            </td>
-          </tr>
-        </table>
-        <a class="cart-btn" href="#">Оформить заказ</a>
-      </div>
   	</header>
   	<main class="container">
   		<h1 class="caption">Крем-брюле и пломбир с малиновым джемом</h1>
@@ -121,30 +129,49 @@
   		</div>
   		<div class="product hits">
   			<img src="http://placehold.it/150x100">
-  			<span class="hits-price">310 <img src="http://placehold.it/15x15">/кг</span>
-  			<a href="#">Сливочное с аплельсиновым джемом и стружкой</a>
+        <span class="product-price">310<img src="http://placehold.it/15x15"> /кг</span>
+        <a class="creamy-orange-jam" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a class="quick-view" href="#">Быстрый просмотр</a>
   		</div>
   		<div class="product hits">
   			<img src="http://placehold.it/150x100">
-  			<span class="hits-price">380 /кг</span>
-  			<a href="#">Сливочное-кофейное с кусочками шоколада</a>
+        <span class="product-price">380<img src="http://placehold.it/15x15"> /кг</span>
+        <a class="creamy-cofee" href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <a class="quick-view" href="#">Быстрый просмотр</a>
   		</div>
   		<div class="product hits">
   			<img src="http://placehold.it/150x100">
-  			<span class="hits-price">355 /кг</span>
-  			<a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a>
+        <span class="product-price">355<img src="http://placehold.it/15x15"> /кг</span>
+        <a class="creamy-strawberry" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a class="quick-view" href="#">Быстрый просмотр</a>
   		</div>
   		<div class="product hits">
   			<img src="http://placehold.it/150x100">
-  			<span class="hits-price">415 /кг</span>
-  			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <span class="product-price">415<img src="http://placehold.it/15x15"> /кг</span>
+        <a class="creme-brulee" href="#">Сливочное с крем-брюле с карамельной подливкой</a>
+        <a class="quick-view" href="#">Быстрый просмотр</a>
   		</div>
   		<div class="feature">
-            <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-  					<p class="feature-discription ice-icon">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудование и проверенных временем технологий</p>
-  					<p class="feature-discription leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального экологически чистого сырья</p>
-  					<p class="feature-discription cow-icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-  					<p class="feature-discription thermometer-icon">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+            <h2>
+              Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного
+              производства на развес
+            </h2>
+  					<p class="feature-discription ice-icon">
+              Все наше мороженое изготавливается на собственном производстве, с использованием
+              современного оборудование и проверенных временем технологий
+            </p>
+  					<p class="feature-discription leaf-icon">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+              Все дополнительные ингридиенты и добавки произведены из натурального экологически чистого сырья
+            </p>
+  					<p class="feature-discription cow-icon">
+              Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.
+            </p>
+  					<p class="feature-discription thermometer-icon">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            который не даёт мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+            </p>
   		</div>
   		<div class="news">
   			<h3>Новое в нашем блоге</h3>
@@ -152,23 +179,45 @@
   		</div>
   		<div class="distribution">
   			<form class="distribution-form" action="/" method="post">
-  			<p>Подпишитесь на нашу рассылку и будете всегда в курсу всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+  			<p>
+          Подпишитесь на нашу рассылку и будете всегда в курсу всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+        </p>
   			<input type="text" name="distribution-mail" placeholder="Электронная почта">
   			<input type="submit" name="send" value="Отправить">
   			</form>
   		</div>
   		<div class="map">
   			<div class="contact">
-  				<p>Адрес главного офиса и</br>
-           офлан магазина:</br>
-  				<b>ул. Большая Конюшенная</br>
-           19/8, Санкт-Петербург</b>
-  				Для заказов по телефону:</br>
-  				<b>8 812 450-25-25</b></br>
-  				(с 10 до 20 ежедневно)</br>
+  				<p class="contact-normal">
+            Адрес главного офиса и</br>
+            офлайн магазина:
+          </p>
+  				<p class="contact-bold">
+            ул. Большая Конюшенная
+            19/8, Санкт-Петербург
+          </p>
+  				<p class="contact-normal">
+            Для заказов по телефону:
+          </p>
+          <p class="contact-bold">  
+  				  8 812 450-25-25
+          </p>
+          <p class="contact-normal">
+  				  (с 10 до 20 ежедневно)
+          </p>  
   				<a class="contact-btn" href="#">Форма обратной связи</a>
   			</div>
   		</div>
+      <div class="contact-form">
+        <form action="/" method="post">
+          <h2 class="contect-form-name">Мы обязательно вам ответим</h2></br>
+          <input type="text" name="contact-form-name" placeholder="Как вас зовут"></br>
+          <input type="text" name="contact-form-mail" placeholder="Ваша почта для ответа?"></br>
+          <textarea rows="5" placeholder="Напишите что-нибудь..."></textarea><br>
+          <input type="submit" name="contact-ansver" value="Отправить">
+        </form>
+      </div>
   	</main>
   	<footer class="main-footer">
   		<div class="container">
