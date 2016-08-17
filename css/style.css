@@ -4,6 +4,7 @@
 	color: #323232;
 	font-weight: normal;
 	font-family: "Roboto";
+	background-color: #8ea99a;
 }
 .banner-title{
 	font-size: 35px;
@@ -19,3 +20,122 @@
 	font-weight: normal;
 	font-family: "Roboto Medium";
 }
+
+.clearfix{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	width: 160px;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+	outline: 2px solid black;
+}
+
+.main-header{
+	margin-bottom: 35px;
+	outline: 2px solid black;
+}
+
+.main-navigation{
+	float: left;
+	width: 700px;
+	outline: 2px solid black;
+	min-height: 120px;
+}
+
+.header-schedule{
+	float: right;
+	width: 170px;
+	outline: 2px solid black;
+}
+
+.user-block{
+	float: left;
+	width: 293px;
+	outline: 2px solid black;
+}
+
+.navigation-submenu{
+	display: none;
+}
+
+li:hover .navigation-submenu{
+	display: block;
+}
+
+.inside-search{
+	display: none;
+}
+
+li:hover .inside-search{
+	display: block;
+}
+
+.inside-login{
+	display: none;
+}
+
+li:hover .inside-login{
+	display: block;
+}
+
+.inside-cart{
+	display: none;
+}
+
+li:hover .inside-cart{
+	display: block;
+}
+
+.slider{
+	outline: 2px solid black;
+	height: 565px;
+	width: 660px;
+	position: relative;
+	left: 277px;
+}
+
+.caption{
+	font-size: 60px;
+	line-height: 60px;
+	color: white;
+	text-align: center;
+	margin-bottom: 35px;
+	position: absolute;
+	top: 250px;
+}
+
+.let-two{
+	width: 280px;
+	height: 65px;
+	background: #f06441;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 25px;
+	font-size: 32px;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	display: block;
+	top: 457px;
+	left: 192px;
+}
+
+.left-banner{
+	width: 560px;
+	height: 230px;
+	border-radius: 25px;
+	outline: 2px solid black;
+	background-image: url("img/raspberries-background.jpg") no-repeat;
+}
+
+
+
