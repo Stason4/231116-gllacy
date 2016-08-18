@@ -1,10 +1,11 @@
 ﻿body{
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 0;
 	color: #323232;
 	font-weight: normal;
 	font-family: "Roboto";
 	background-color: #8ea99a;
+	margin: 0;
+	padding: 0;
 }
 .banner-title{
 	font-size: 35px;
@@ -33,14 +34,15 @@
 }
 
 .container{
+	font-size: 16px;
 	width: 1200px;
+	margin: 0 auto;
 	padding: 0 10px;
 	padding-top: 35px;
 	outline: 2px solid black;
 }
 
 .main-header{
-	margin-bottom: 35px;
 	outline: 2px solid black;
 }
 
@@ -66,35 +68,35 @@
 .navigation-submenu{
 	display: none;
 }
-
+/*
 li:hover .navigation-submenu{
 	display: block;
 }
-
+*/
 .inside-search{
 	display: none;
 }
-
+/*
 li:hover .inside-search{
 	display: block;
 }
-
+*/
 .inside-login{
 	display: none;
 }
-
+/*
 li:hover .inside-login{
 	display: block;
 }
-
+*/
 .inside-cart{
 	display: none;
 }
-
+/*
 li:hover .inside-cart{
 	display: block;
 }
-
+*/
 .slider{
 	outline: 2px solid black;
 	height: 565px;
@@ -131,10 +133,159 @@ li:hover .inside-cart{
 .left-banner{
 	width: 560px;
 	height: 230px;
-	border-radius: 25px;
 	outline: 2px solid black;
-	background-image: url("img/raspberries-background.jpg") no-repeat;
+	float: left;
+	margin-right: 26px;
+	margin-left: 27px;
+	margin-bottom: 40px;
 }
 
+.right-banner{
+	width: 560px;
+	height: 230px;
+	outline: 2px solid black;
+	float: left;
+	margin-bottom: 40px;
+}
 
+.product{
+	display: inline-block;
+	width: 267px;
+	height: 328px;
+	outline: 2px solid black;
+	margin-right: 26px;
+	margin-bottom: 40px;
+}
 
+.product:nth-child(4n){
+	margin-left: 27px;
+}
+
+.feature{
+	width: 1146px;
+	height: 248px;
+	outline: 2px solid black;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	padding: 30px 20px;
+}
+
+.feature-discription{
+	width: 540px;
+	height: 85px;
+	display: inline-block;
+	outline: 2px solid black;
+	margin-right: 26px;
+}
+
+.news{
+	width: 560px;
+	height: 220px;
+	outline: 2px solid black;
+	float: left;
+	margin-right: 26px;
+	margin-left: 27px;
+	margin-bottom: 40px;
+}
+
+.distribution{
+	width: 560px;
+	height: 220px;
+	outline: 2px solid black;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.contact{
+	display: none;
+}
+
+.contact-form{
+	display: none;
+}
+
+.map{
+	width: 100%;
+	height: 430px;
+	background: #fcfcfc;
+	outline: 2px solid black;
+}
+
+.main-footer{
+	outline: 2px solid black;
+}
+
+.footer-social{
+	float: left;
+	width: 186px;
+	margin-left: 27px;
+	margin-right: 215px;
+	min-height: 60px;
+	outline: 2px solid black;
+}
+
+.social-info{
+	float: left;
+	width: 335px;
+	min-height: 60px;
+	font-size: 10px;
+	outline: 2px solid black;
+}
+
+.left-social-info{
+	width: 165px;
+	min-height: 34px;
+	float: left;
+	outline: 2px solid black;
+}
+
+.right-social-info{
+	width: 165px;
+	min-height: 34px;
+	float: right;
+	outline: 2px solid black;
+}
+
+.made-in{
+	width: 190px;
+	outline: 2px solid black;
+	float: right;
+	margin-right: 27px; 
+}
+
+.breadcrumbs{
+	outline: 2px solid black;
+}
+
+.catalog-title{
+	background: #778bd7;
+}
+.filter{
+	outline: 2px solid black;
+	margin-bottom: 34px;
+}
+
+.sorting{
+	width: 195px;
+	outline: 2px solid black;
+}
+
+.price-regulation{
+	width: 219px;
+	outline: 2px solid black;
+}
+
+.fatness{
+	width: 418px;
+	outline: 2px solid black;
+}
+
+.filler{
+	width: 702px;
+	outline: 2px solid black;
+}
+
+.paginator{
+	float: right;
+	outline: 2px solid black;
+}
