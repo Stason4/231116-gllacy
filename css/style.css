@@ -210,7 +210,7 @@ li:hover .inside-cart{
 }
 
 .map{
-	width: 1220px;
+	width: 100%;
 	min-height: 430px;
 	overflow-x: hidden; 
 	background: #5f66ae;
