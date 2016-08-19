@@ -206,22 +206,22 @@ li:hover .inside-cart{
 
 .map{
 	width: 100%;
-    
+	min-height: 430px;
     margin-top: 25px;
 	overflow-x: hidden;
 	background: #fcfcfc;
 	outline: 2px solid black;
 }
-/*
+
 .full-width {
-	width: 100vw;
-	position: relative;
-	left: 50%;
-	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
+    width: 100vw;
+  	position: relative;
+  	left: 50%;
+  	right: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
 }
-*/
+
 .main-footer{
 	outline: 2px solid black;
 }
