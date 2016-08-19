@@ -216,18 +216,9 @@ li:hover .inside-cart{
 	overflow-x: hidden; 
 	background: #5f66ae;
 	outline: 2px solid black;
-	margin-left: auto;
-  	margin-right: auto;
 }
 
-.full-width {
-    width: 100vw;
-  	position: relative;
-  	left: 50%;
-  	right: 50%;
-  	margin-left: -50vw;
-  	margin-right: -50vw;
-}
+
 
 .main-footer{
 	outline: 2px solid black;
