@@ -31,6 +31,8 @@
 .logo{
 	float: left;
 	width: 160px;
+	margin-left: 27px;
+	outline: 2px solid black;
 }
 
 .container{
@@ -56,11 +58,13 @@
 	float: right;
 	width: 170px;
 	outline: 2px solid black;
+	margin-right: 27px;
 }
 
 .user-block{
-	float: left;
-	width: 293px;
+	float: right;
+	width: 267px;
+	margin-right: 27px;
 	outline: 2px solid black;
 }
 
@@ -99,9 +103,10 @@ li:hover .inside-cart{
 .slider{
 	outline: 2px solid black;
 	height: 565px;
-	width: 100%;
+	width: 1146px;
 	position: relative;
 	margin-bottom: 40px;
+	margin-left: 27px;
 }
 
 .caption{
@@ -205,11 +210,11 @@ li:hover .inside-cart{
 }
 
 .map{
-	width: 100%;
+	width: 1146px;
 	min-height: 430px;
     margin-top: 25px;
 	overflow-x: hidden;
-	background: #fcfcfc;
+	background: #5f66ae;
 	outline: 2px solid black;
 }
 
@@ -266,13 +271,19 @@ li:hover .inside-cart{
 
 .breadcrumbs{
 	outline: 2px solid black;
+	width: 1106px;
+	margin-left: 27px;
 }
 
 .catalog-title{
-	background: #778bd7;
+	outline: 2px solid black;
+	width: 1146px;
+	margin-left: 27px;
 }
 .filter{
 	outline: 2px solid black;
+	width: 1146px;
+	margin-left: 27px;
 	margin-bottom: 34px;
 }
 
@@ -299,4 +310,6 @@ li:hover .inside-cart{
 .paginator{
 	float: right;
 	outline: 2px solid black;
+	margin-right: 27px;
+	margin-bottom: 30px;
 }
