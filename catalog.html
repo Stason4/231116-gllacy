@@ -17,8 +17,8 @@
       </div>
   			<nav class="main-navigation">
   				<ul class="main-menu">
-  					<li>
-  						<a href="catalog.html" class="catalog">Каталог</a>
+  					<li class="shadow-link active-catalog">
+  						<a>Каталог</a>
   						<ul class="navigation-submenu">
   							<li>
   								<a class="new" href="#">Новинки</a>
@@ -38,74 +38,73 @@
   						</ul>
   					</li>
   					<li>
-  						<a href="#">Доставка и оплата</a>
+  						<a class="link-catalog" href="#">Доставка и оплата</a>
   					</li>
   					<li>
-  						<a href="#">О компании</a>
+  						<a class="link-catalog" href="#">О компании</a>
   					</li>
   				</ul>
   			</nav>
   			<div class="user-block">
-          <ul>
-            <li>
+          <ul class="user-menu">
+            <li class="search-container">
               <a class="search" href="#"></a>
               <div class="inside-search">
-                <input type="text" name="search" placeholder="Что ищем?">  
+              <form class="search-form" action="/" method="post">
+                <input type="search" name="search" placeholder="Что ищем?">  
               </div>
             </li>
-            <li>  
+            <li class="login-container">  
               <a class="login" href="#">Вход</a>
               <div class="inside-login">
-                <form action="/" method="post">
-                  <input type="text" name="login" placeholder="Электронная почта">
+                <form class="login-form clearfix" action="/" method="post">
+                  <input type="email" name="login" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
-                  <input type="submit" name="entry" value="Войти">
+                  <input class="btn entry-btn" type="submit" name="entry" value="Войти">
+                  <div class="login-help">
                   <a class="forgot-password" href="#">Забыли пароль?</a>
                   <a class="new-registration" href="#">Новая регистрация</a>
+                  </div>
                 </form>
               </div>
             </li>
-            <li>
-              <a class="full-cart" href="#">2 товара</a>
+            <li class="cart-container">
+              <a class="full-cart red" href="#">2 товара</a>
               <div class="inside-cart">
-                <table>
+                <table class="cart-product">
                   <caption>Итого: 750 руб.</caption>
                   <tr>
-                    <td>
-                      <img src="http://placehold.it/15x15">
-                    </td>
-                    <td>
-                      <img src="http://placehold.it/15x15">
-                    </td>
-                    <td>
+                    <td class="cross"></td>
+                    <td class="litle-ice1"></td> 
+                    <td class="full-cart-discription">
                       Пломбир с апельсиновым джемом
                     </td>
                     <td>
-                      1,5 кг x 200 руб
+                      1,5 кг x <span class="price-kg">200 руб</span>
                     </td>
                     <td>
                       300 руб.
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <img src="http://placehold.it/15x15">
+                    <td class="cross">
+                      
                     </td>
-                    <td>
-                      <img src="http://placehold.it/15x15">
+                    <td class="litle-ice2">
+                      
                     </td>
-                    <td>
+                    <td class="full-cart-discription">
                       Клубничный пломбир с присыпкой из белого шоколада
                     </td>
                     <td>
-                      1,5 кг x 300 руб
+                      1,5 кг x <span class="price-kg">300 руб</span>
                     </td>
                     <td>
                       450 руб.
                     </td>
                   </tr>
                 </table>
-                <a class="cart-btn" href="#">Оформить заказ</a>
+                <a class="cart-btn btn" href="#">Оформить заказ</a>
               </div>
             </li>
           </ul>
@@ -119,10 +118,10 @@
   	<main class="container clearfix">
   		<ul class="breadcrumbs">
   			<li>
-  				<a href="#">Главная</a>
+  				<a href="#">Главная »</a>
   			</li>
   			<li>
-  				<a href="#">Каталог</a>
+  				<a href="#">Каталог »</a>
   			</li>
   			<li>
   				<a href="#">Сливочное</a>
@@ -180,76 +179,124 @@
   			</form>
   		</div>
   		<div class="product">
-  			<img src="img/creamy-orange-jam.png" width="267" height="267">
-  			<span class="product-price">310<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-orange-jam.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">310<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+	  			</h2>
+        		<a class="quick-view btn" href="#">Быстрый просмотр</a>
+        	</div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-cofee.png" width="267" height="267">
-  			<span class="product-price">380<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-cofee.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">380<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
+	  			</h2>
+        		<a class="quick-view btn" href="#">Быстрый просмотр</a>
+        	</div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-strawberry.png" width="267" height="267">
-  			<span class="product-price">355<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-strawberry.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">355<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creme-brulee.png" width="267" height="267">
-  			<span class="product-price">415<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с крем-брюле с карамельной подливкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creme-brulee.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">415<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с крем-брюле с карамельной подливкой</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/lingonberry-jam.png" width="267" height="267">
-  			<span class="product-price">325<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с брусничным джемом</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/lingonberry-jam.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">325<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с брусничным джемом</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-blueberry.png" width="267" height="267">
-  			<span class="product-price">410<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочно-черничное с цельными ягодами черники</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-blueberry.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">410<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочно-черничное с цельными ягодами черники</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>
   		</div>
   		<div class="product">
-  			<img src="img/creamy-lemon.png" width="267" height="267">
-  			<span class="product-price">375<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-lemon.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">375<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/chocolate-chips.png" width="267" height="267">
-  			<span class="product-price">320<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с шоколадной стружкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/chocolate-chips.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">320<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с шоколадной стружкой</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-vanila.png" width="267" height="267">
-  			<span class="product-price">440<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочно-ванильное с кусочками шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-vanila.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">440<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочно-ванильное с кусочками шоколада</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-menthol.png" width="267" height="267">
-  			<span class="product-price">435<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с ментоловым сиропом</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-menthol.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">435<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с ментоловым сиропом</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-black-chocolate.png" width="267" height="267">
-  			<span class="product-price">355<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с кусочками черного шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-black-chocolate.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">355<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с кусочками черного шоколада</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="product">
-  			<img src="img/creamy-mint.png" width="267" height="267">
-  			<span class="product-price">420<img src="http://placehold.it/15x15"> /кг</span>
-  			<a class="link-ice" href="#">Сливочное с мятным сиропом</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  			<div class="active">
+	  			<img src="img/creamy-mint.png" class="product-picture" width="267" height="267">
+	  			<span class="product-price">420<img src="img/rub.svg" width="27" height="33"> /кг</span>
+	  			<h2 class="product-title">
+	  			<a class="link-ice" href="#">Сливочное с мятным сиропом</a>
+	  			</h2>
+	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
+	        </div>	
   		</div>
   		<div class="paginator">
   			<a class="prew" href="#"></a>
@@ -264,10 +311,10 @@
   	<footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-          <a class="social-btn social-btn-instagram" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-twitter" href="#"></a>
+          <a class="social-btn social-btn-instagram" href="#"></a>
+          <a class="social-btn social-btn-facebook" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
         </section>
         <section class="social-info">
           <div class="left-social-info">
@@ -280,7 +327,7 @@
           </div>
         </section>
         <section class="made-in">
-          <div class="footer-logo"><img src="http://placehold.it/25x25"></div>
+          <div class="footer-logo"></div>
           <span class="made-in-link">Сделано в<a href="#">HTML Academy</a>© 2016</span>
         </section>
       </div>

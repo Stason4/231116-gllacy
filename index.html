@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+  <div class="site-wrapper">
+  <div class="content-wrapper">
   	<header class="main-header">
   		<div class="container clearfix">
       <div class="logo">
@@ -16,7 +21,7 @@
   			<nav class="main-navigation">
   				<ul class="main-menu">
   					<li class="shadow-link">
-  						<a href="catalog.html" class="catalog">Каталог</a>
+  						<a href="catalog.html" class="catalog link-catalog">Каталог</a>
   						<ul class="navigation-submenu">
   							<li>
   								<a href="#" class="new">Новинки</a>
@@ -36,74 +41,73 @@
   						</ul>
   					</li>
   					<li class="shadow-link">
-  						<a href="#">Доставка и оплата</a>
+  						<a class="link-catalog" href="#">Доставка и оплата</a>
   					</li>
   					<li class="shadow-link">
-  						<a href="#">О компании</a>
+  						<a class="link-catalog" href="#">О компании</a>
   					</li>
   				</ul>
   			</nav>
   			<div class="user-block">
-          <ul>
-            <li>
+          <ul class="user-menu">
+            <li class="search-container">
               <a class="search" href="#"></a>
               <div class="inside-search">
-                <input type="text" name="search" placeholder="Что ищем?">  
+                <form class="search-form" action="/" method="post">
+                <input type="search" name="search" id="search" placeholder="Что ищем?">  
               </div>
             </li>
-            <li>  
+            <li class="login-container">  
               <a class="login" href="#">Вход</a>
               <div class="inside-login">
-                <form action="/" method="post">
-                  <input type="text" name="login" placeholder="Электронная почта">
+                <form class="login-form clearfix" action="/" method="post">
+                  <input type="email" name="login" id="login" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
-                  <input type="submit" name="entry" value="Войти">
+                  <input class="btn entry-btn" type="submit" name="entry" value="Войти">
+                  <div class="login-help">
                   <a class="forgot-password" href="#">Забыли пароль?</a>
                   <a class="new-registration" href="#">Новая регистрация</a>
+                  </div>
                 </form>
               </div>
             </li>
-            <li>
+            <li class="cart-container">
               <a class="cart" href="#">Пусто</a>
               <div class="inside-cart">
-                <table>
+                <table  class="cart-product">
                   <caption>Итого: 750 руб.</caption>
                   <tr>
-                    <td>
-                      <img src="http://placehold.it/15x15">
-                    </td>
-                    <td>
-                      <img src="http://placehold.it/15x15">
-                    </td>
-                    <td>
+                    <td class="cross"></td>
+                    <td class="litle-ice1"></td> 
+                    <td class="full-cart-discription">
                       Пломбир с апельсиновым джемом
                     </td>
                     <td>
-                      1,5 кг x 200 руб
+                      1,5 кг x <span class="price-kg">200 руб</span>
                     </td>
                     <td>
                       300 руб.
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <img src="http://placehold.it/15x15">
+                    <td class="cross">
+                      
                     </td>
-                    <td>
-                      <img src="http://placehold.it/15x15">
+                    <td class="litle-ice2">
+                      
                     </td>
-                    <td>
+                    <td class="full-cart-discription">
                       Клубничный пломбир с присыпкой из белого шоколада
                     </td>
                     <td>
-                      1,5 кг x 300 руб
+                      1,5 кг x <span class="price-kg">300 руб</span>
                     </td>
                     <td>
                       450 руб.
                     </td>
                   </tr>
                 </table>
-                <a class="cart-btn" href="#">Оформить заказ</a>
+                <a class="cart-btn btn" href="#">Оформить заказ</a>
               </div>
             </li>
           </ul>
@@ -116,50 +120,79 @@
   		</div>
   	</header>
   	<main>
-      <div class="container clearfix">
-      <div class="slider clearfix">
-        <img src="img/ice-1-slide.png" width="650" height="582">
-    		<h1 class="caption">Крем-брюле и пломбир с малиновым джемом</h1>
-    		  <a href="#" class="let-two">Давайте оба!</a>    
-    		<div class="slider-switch">
-    			<a href="#" class="ice-cream-slide">1</a>
-    			<a href="#" class="ice-cream-slide">2</a>
-    			<a href="#" class="ice-cream-slide">3</a>
-    		</div>
+      <div class="container">
+      <div class="slider">
+        <div class="slide" id="slide-1">
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+         </div>
+        <div class="slide" id="slide-2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide" id="slide-3">
+            <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+        </div>
       </div>
   		<div class="left-banner">
-  			<h2 class="banner-title">Малинка даром</h2>
-  			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-  			<a class="buy-btn" href="#">Хочу варенье!</a>
+  			<b class="banner-title">Малинка даром</b>
+  			<p class="banner-discpription">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+  			<a class="buy-btn btn" href="#">Хочу варенье!</a>
   		</div>
   		<div class="right-banner">
-  			<h2 class="banner-title">Шоколадки даром!</h2>
-  			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  			<a class="buy-btn" href="">Хочу шоколадки!</a>
+  			<b class="banner-title">Шоколадки даром!</b>
+  			<p class="banner-discpription">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+  			<a class="buy-btn btn" href="">Хочу шоколадки!</a>
   		</div>
-  		<div class="product hits">
-  			<img src="img/creamy-orange-jam.png" width="267" height="267">
-        <span class="product-price">310<img src="http://placehold.it/15x15"> /кг</span>
-        <a class="link-ice" href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  		<div class="product">
+            <div class="active">
+                <img src="img/hit.png" class="hits" width="61" height="61">
+  			    <img src="img/creamy-orange-jam.png" class="product-picture" width="267" height="267">
+                <span class="product-price">310 <img src="img/rub.svg" width="27" height="33"> <span class="product-kg">/кг</span></span>
+                <h2 class="product-title">
+                <a class="link-ice" href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </h2>
+                <a class="quick-view btn" href="#">Быстрый просмотр</a>
+            </div>
   		</div>
-  		<div class="product hits">
-  			<img src="img/creamy-cofee.png" width="267" height="267">
-        <span class="product-price">380<img src="http://placehold.it/15x15"> /кг</span>
-        <a class="link-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  		<div class="product">
+            <div class="active">
+                <img src="img/hit.png" class="hits" width="61" height="61">
+  			    <img src="img/creamy-cofee.png" class="product-picture" width="267" height="267">
+                <span class="product-price">380 <img src="img/rub.svg" width="27" height="33"> <span class="product-kg"> /кг</span></span>
+                <h2 class="product-title">
+                <a class="link-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                </h2>
+                <a class="quick-view btn" href="#">Быстрый просмотр</a>
+            </div>    
   		</div>
-  		<div class="product hits">
-  			<img src="img/creamy-strawberry.png" width="267" height="267">
-        <span class="product-price">355<img src="http://placehold.it/15x15"> /кг</span>
-        <a class="link-ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  		<div class="product">
+            <div class="active">
+                <img src="img/hit.png" class="hits" width="61" height="61">
+      			<img src="img/creamy-strawberry.png" class="product-picture" width="267" height="267">
+                <span class="product-price">355 <img src="img/rub.svg" width="27" height="33"> <span class="product-kg"> /кг</span></span>
+                <h2 class="product-title">
+                <a class="link-ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </h2>
+                <a class="quick-view btn" href="#">Быстрый просмотр</a>
+            </div>    
   		</div>
-  		<div class="product hits">
-  			<img src="img/creme-brulee.png" width="267" height="267">
-        <span class="product-price">415<img src="http://placehold.it/15x15"> /кг</span>
-        <a class="link-ice" href="#">Сливочное с крем-брюле с карамельной подливкой</a>
-        <a class="quick-view" href="#">Быстрый просмотр</a>
+  		<div class="product">
+            <div class="active">
+                <img src="img/hit.png" class="hits" width="61" height="61">
+      			<img src="img/creme-brulee.png" class="product-picture" width="267" height="267">
+                <span class="product-price">415 <img src="img/rub.svg" width="27" height="33"> <span class="product-kg"> /кг</span></span>
+                <h2 class="product-title">
+                <a href="#">Сливочное с крем-брюле с карамельной подливкой</a>
+                </h2>
+                <a class="quick-view btn" href="#">Быстрый просмотр</a>
+            </div>    
   		</div>
   		<div class="feature clearfix">
             <h2 class="feature-title">
@@ -185,16 +218,16 @@
   		</div>
   		<div class="news">
   			<h3>Новое в нашем блоге</h3>
-  			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+  			<a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
   		</div>
   		<div class="distribution">
   			<form class="distribution-form" action="/" method="post">
-  			<p>
-          Подпишитесь на нашу рассылку и будете всегда в курсу всего самого вкусного,
+  			<p class="distribution-subscription">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
           что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
         </p>
   			<input type="text" name="distribution-mail" placeholder="Электронная почта">
-  			<input type="submit" name="send" value="Отправить">
+  			<input class="btn" type="submit" name="send" value="Отправить">
   			</form>
   		</div>
       </div>
@@ -211,13 +244,13 @@
   				<p class="contact-normal">
             Для заказов по телефону:
           </p>
-          <p class="contact-bold">  
+          <p class="contact-bold number">  
   				  8 812 450-25-25
           </p>
-          <p class="contact-normal">
+          <p class="contact-normal everyday">
   				  (с 10 до 20 ежедневно)
           </p>  
-  				<a class="contact-btn" href="#">Форма обратной связи</a>
+  				<a class="contact-btn btn" href="#">Форма обратной связи</a>
   			</div>
   		</div>
       <div class="contact-form">
@@ -233,10 +266,10 @@
   	<footer class="main-footer">
   		<div class="container clearfix">
   			<section class="footer-social">
-  				<a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-  				<a class="social-btn social-btn-instagram" href="#">Инстаграм</a>
-  				<a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
-  				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+  				<a class="social-btn social-btn-twitter" href="https://www.twitter.com"></a>
+  				<a class="social-btn social-btn-instagram" href="https://www.instagram.com"></a>
+  				<a class="social-btn social-btn-facebook" href="https://www.facebook.com"></a>
+  				<a class="social-btn social-btn-vk" href="https://vk.com"></a>
   			</section>
   			<section class="social-info">
   				<div class="left-social-info">
@@ -249,10 +282,12 @@
   				</div>
   			</section>
   			<section class="made-in">
-  				<div class="footer-logo"><img src="http://placehold.it/25x25"></div>
-  				<span class="made-in-link">Сделано в<a href="#">HTML Academy</a>© 2016</span>
+  				<div class="footer-logo"></div>
+  				<span class="made-in-link">Сделано в <a href="#">HTML Academy</a> © 2016</span>
   			</section>
   		</div>
   	</footer>
+    </div>
+    </div>
   </body>
 </html>
