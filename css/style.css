@@ -226,10 +226,9 @@ body > input[type="radio"] {
 	border-radius: 20px;
 }
 
-.no-link-catalog{
-	border-bottom: none;
+.no-link{
+	border-bottom: 1px solid #d07058;
 }
-
 
 .main-menu .navigation-submenu{
   position: absolute;
