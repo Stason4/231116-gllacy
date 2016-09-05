@@ -221,13 +221,13 @@ body > input[type="radio"] {
 }
 
 .active-catalog{
-	background: #d07058;
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	padding: 6px 14px;
 	border-radius: 20px;
 }
 
 .no-link{
-	border-bottom: 1px solid #d07058;
+	border-bottom: 1px solid transparent;
 }
 
 .main-menu .navigation-submenu{
@@ -249,7 +249,7 @@ li:hover .navigation-submenu{
   	padding-top: 7px;
   	padding-bottom: 7px;
   	z-index: 10;
-  	border-top: 3px solid #8ba596;
+  	border-top: 3px solid rgba(142,169,154,1);
 }
 
 .navigation-submenu a{
@@ -282,6 +282,11 @@ li:hover .navigation-submenu{
 
 .navigation-submenu .new:hover{
 	padding-bottom: 14px;
+}
+
+.navigation-submenu .submenu-active{
+	background: #d07058;
+	color: #ffffff;
 }
 
 .user-block{
@@ -338,7 +343,7 @@ li:hover .navigation-submenu{
 	width: 342px;
 	background: #f8f7f4;
 	border-radius: 6px;
-	border-top: 4px solid #849d8f;
+	border-top: 4px solid rgba(142,169,154,1);
 	box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
 }
 
@@ -403,7 +408,7 @@ li:hover .navigation-submenu{
 	padding-bottom: 20px; 
 	display: none;
 	width: 257px;
-	border-top: 4px solid rgba(0,0,0,.4);
+	border-top: 4px solid rgba(142,169,154,1);
 	background: #f8f7f4;
 	border-radius: 6px;
 }
@@ -456,7 +461,7 @@ li:hover .navigation-submenu{
 	border-radius: 20px;
 	color: #ffffff;
 	text-decoration: none;
-	background: #eb583b;
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 }
 
 .btn:hover{
@@ -550,7 +555,7 @@ li:hover .navigation-submenu{
 	min-height: 202px;
 	width: 506px;
 	background: #f8f7f4;
-	border-top: 4px solid #9cb0a5;
+	border-top: 4px solid rgba(142,169,154,1);
 	right: 0;
 	border-radius: 10px;
 	padding: 20px 17px;
@@ -760,6 +765,7 @@ caption{
 	line-height: 45px;
 	font-weight: bold;
 	font-family: "Roboto", Arial, sans-serif;
+	z-index: 40;
 }
 
 .product-kg{
@@ -790,6 +796,7 @@ caption{
 
 .product-title a:hover{
 	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
 }
 
 .hits{
@@ -798,6 +805,7 @@ caption{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 40;
 }
 
 .feature{
@@ -1030,23 +1038,38 @@ caption{
 }
 
 .social-btn-twitter{
-	background: url("../img/12twitter.svg") no-repeat 50% 50%;
+	background: url("../img/white-twitter.svg") no-repeat 50% 50%;
 	
+}
+
+.social-btn-twitter:hover{
+	background: url("../img/12twitter.svg") no-repeat 50% 50%;
 }
 
 .social-btn-instagram{
-	background: url("../img/14instagram.svg") no-repeat 50% 50%;
+	background: url("../img/white-instagram.svg") no-repeat 50% 50%;
 	
+}
+
+.social-btn-instagram:hover{
+	background: url("../img/14instagram.svg") no-repeat 50% 50%;
 }
 
 .social-btn-facebook{
+	background: url("../img/white-fb.svg") no-repeat 50% 50%;
+}
+
+.social-btn-facebook:hover{
 	background: url("../img/8fb.svg") no-repeat 50% 50%;
-	
 }
 
 .social-btn-vk{
-	background: url("../img/13vk.svg") no-repeat 50% 50%;
+	background: url("../img/white-vk.svg") no-repeat 50% 50%;
 	
+}
+
+.social-btn-vk:hover{
+	background: url("../img/13vk.svg") no-repeat 50% 50%;
 }
 
 .social-info{
@@ -1067,6 +1090,7 @@ caption{
 
 .social-info a:hover{
 	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
 }
 
 .for-deliveries{
@@ -1119,27 +1143,96 @@ caption{
 
 .made-in-link a:hover{
 	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
 }
 
 .breadcrumbs{
-	outline: 2px solid black;
-	width: 1106px;
+	padding: 0;
+	margin: -19px 0 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.breadcrumbs > li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.breadcrumbs .bread-active{
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.breadcrumbs a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.breadcrumbs a:hover{
+	color: #f4bab4;
+}
+
+.breadcrumbs .bread-active:hover{
+	border-bottom: 1px solid #ffbc9e;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: " » ";
+  margin-left: 5px;
+  margin-right: 6px;
+  color: #ffffff;
 }
 
 
 .catalog-title{
-	outline: 2px solid black;
-	width: 1146px;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 6px;
+	margin-bottom: 33px;
 }
+
 .filter{
-	outline: 2px solid black;
 	width: 1146px;
 	margin-bottom: 34px;
 }
 
+.filter-form div{
+	display: inline-block;
+	vertical-align: top;
+}
+/*
 .sorting{
 	width: 195px;
-	outline: 2px solid black;
+	height: 36px;
+}
+*/
+.sorting-select{
+	width: 192px;
+	height: 36px;
+	box-sizing: border-box;
+	background: #a9b9af;
+	color: #ffffff;
+	border-radius: 20px;
+	outline: none;
+	padding-left: 15px;
+	padding-right: 15px; 
+}
+
+.sorting-select:hover{
+	background: #ffffff;
+	color: black;
+}
+
+.sorting-title{
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	margin-left: 15px;
 }
 
 .price-regulation{

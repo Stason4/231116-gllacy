@@ -24,7 +24,7 @@
   								<a class="new" href="#">Новинки</a>
   							</li>
   							<li>
-  								<a href="#">Сливочное</a>
+  								<a class="submenu-active" href="#">Сливочное</a>
   							</li>
   							<li>
   								<a href="#">Щербеты</a>
@@ -118,21 +118,21 @@
   	<main class="container clearfix">
   		<ul class="breadcrumbs">
   			<li>
-  				<a href="#">Главная »</a>
+  				<a class="bread-active" href="index.html">Главная</a>
   			</li>
   			<li>
-  				<a href="#">Каталог »</a>
+  				<a class="bread-active" href="#">Каталог</a>
   			</li>
   			<li>
-  				<a href="#">Сливочное</a>
+  				<a>Сливочное</a>
   			</li>
   		</ul>
   		<h1 class="catalog-title">Сливочное мороженое</h1>
   		<div class="filter">
-  			<form action="/" method="post">
+  			<form class="filter-form" action="/" method="post">
   				<div class="sorting">
-	  				Сортировка:</br>
-	  				<select size="1">
+	  				<span class="filter-title sorting-title">Сортировка:</span></br>
+	  				<select class="sorting-select" size="1">
 	  					<option value="popularity">по популярности</option>
 	  					<option value="not-expensive">сначала недорогие</option>
 	  					<option value="expensive">сначала дорогие</option>
@@ -179,9 +179,9 @@
   			</form>
   		</div>
   		<div class="product">
+  			<span class="product-price">310 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-orange-jam.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">310<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 	  			</h2>
@@ -189,9 +189,9 @@
         	</div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">380 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-cofee.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">380<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
 	  			</h2>
@@ -199,9 +199,9 @@
         	</div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">355 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-strawberry.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">355<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 	  			</h2>
@@ -209,9 +209,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">415 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creme-brulee.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">415<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с крем-брюле с карамельной подливкой</a>
 	  			</h2>
@@ -219,9 +219,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">325 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/lingonberry-jam.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">325<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с брусничным джемом</a>
 	  			</h2>
@@ -229,9 +229,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">410 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-blueberry.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">410<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочно-черничное с цельными ягодами черники</a>
 	  			</h2>
@@ -239,9 +239,9 @@
 	        </div>
   		</div>
   		<div class="product">
+  			<span class="product-price">375 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-lemon.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">375<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочно-лимонное с карамельной присыпкой</a>
 	  			</h2>
@@ -249,9 +249,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">320 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/chocolate-chips.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">320<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с шоколадной стружкой</a>
 	  			</h2>
@@ -259,9 +259,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">440 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-vanila.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">440<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочно-ванильное с кусочками шоколада</a>
 	  			</h2>
@@ -269,9 +269,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">435 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-menthol.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">435<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с ментоловым сиропом</a>
 	  			</h2>
@@ -279,9 +279,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">355 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-black-chocolate.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">355<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с кусочками черного шоколада</a>
 	  			</h2>
@@ -289,9 +289,9 @@
 	        </div>	
   		</div>
   		<div class="product">
+  			<span class="product-price">420 <img src="img/rub.svg" width="27" height="33"> /кг</span>
   			<div class="active">
 	  			<img src="img/creamy-mint.png" class="product-picture" width="267" height="267">
-	  			<span class="product-price">420<img src="img/rub.svg" width="27" height="33"> /кг</span>
 	  			<h2 class="product-title">
 	  			<a class="link-ice" href="#">Сливочное с мятным сиропом</a>
 	  			</h2>
