@@ -131,7 +131,7 @@
   		<div class="filter">
   			<form class="filter-form" action="/" method="post">
   				<div class="sorting">
-	  				<span class="filter-title sorting-title">Сортировка:</span></br>
+	  				<div class="filter-title sorting-title">Сортировка:</div></br>
 	  				<select class="sorting-select" size="1">
 	  					<option value="popularity">по популярности</option>
 	  					<option value="not-expensive">сначала недорогие</option>
@@ -140,42 +140,68 @@
 	  				</select>
   				</div>
   				<div class="price-regulation">
-  					Цена: 100 руб. - 500 руб.</br>
-  					<img src="http://placehold.it/150x25">
+  					<div class="fliter-range">
+  						<div class="filter-title">Цена:</div>
+  						<div class="price-controls">
+  							<label class="min-price">100 руб. -</label>
+  							<label class="max-price">500 руб.</label>
+  						</div>
+  						<div class="range-controls">
+  							<div class="scale">
+  								<div class="bar"></div>
+  							</div>
+  							<div class="range-toggle range-toggle-min"></div>
+  							<div class="range-toggle range-toggle-max"></div>
+  						</div>
+  					</div>
   				</div>
-  				<div class="fatness">
-  					Жирность:</br>
-  					<label>
-	  					<input type="radio" name="radio-fatness" value="zero-percent">
-	  					0%
-  					</label>
-  					<label>
-  						<input type="radio" name="radio-fatness" value="to-ten-percent" checked>
-  						до 10%
-  					</label>
-  					<label>
-  						<input type="radio" name="radio-fatness" value="to-thirty-percent">
-  						до 30%
-  					</label>
-  					<label>
-  						<input type="radio" name="radio-fatness" value="after-thirty-percent">
-  						выше 30%
-  					</label>
+  				<div class="fatness-wrapper">
+  					<h5 class="fatness-title">Жирность:</h5></br>
+  						<div class="fatness">
+  					<div class="fatness-radio">
+	  					<input type="radio" name="radio-fatness" id="zero-percent">
+	  					<label for="zero-percent" class="fatness-lable zero">0%</label>
+  					</div>
+  					<div class="fatness-radio">
+  						<input type="radio" name="radio-fatness" id="to-ten-percent">
+  						<label for="to-ten-percent" class="fatness-lable">до 10%</label>
+  					</div>
+  					<div class="fatness-radio">
+  						<input type="radio" name="radio-fatness" id="to-thirty-percent">
+  						<label for="to-thirty-percent" class="fatness-lable">до 30%</label>
+  					</div>
+  					<div class="fatness-radio">
+  						<input type="radio" name="radio-fatness" id="after-thirty-percent">
+  						<label for="after-thirty-percent" class="fatness-lable">выше 30%</label>
+  					</div>
+  						</div>
   				</div>
-  				<div class="filler">
-  					Наполнители:</br>
-  					<input type="checkbox" name="chocolate" id="chocolate-check" checked>
-  					<label for="chocolate-check">шоколадные</label>
-  					<input type="checkbox" name="sugar" id="sugar-check" checked>
-  					<label for="sugar-check">сахарные присыпки</label>
-  					<input type="checkbox" name="fruit" id="fruit-check">
-  					<label for="fruit-check">фрукты</label>
-  					<input type="checkbox" name="syrup" id="syrup-check">
-  					<label for="syrup-check">сиропы</label>
-  					<input type="checkbox" name="jam" id="jam-check">
-  					<label for="jam-check">джемы</label>
+  				<div class="filler-wrapper">
+  					<h5 class="filler-title">Наполнители:</h5></br>
+  						<div class="filler-board">
+		  					<div class="filler-checkbox">
+			  					<input type="checkbox" name="chocolate" id="chocolate-check">
+			  					<label for="chocolate-check" class="filler-lable">шоколадные</label>
+			  				</div>
+			  				<div class="filler-checkbox">	
+			  					<input type="checkbox" name="sugar" id="sugar-check">
+			  					<label for="sugar-check" class="filler-lable">сахарные присыпки</label>
+			  				</div>
+			  				<div class="filler-checkbox">
+			  					<input type="checkbox" name="fruit" id="fruit-check">
+			  					<label for="fruit-check" class="filler-lable">фрукты</label>
+			  				</div>
+			  				<div class="filler-checkbox">
+			  					<input type="checkbox" name="syrup" id="syrup-check">
+			  					<label for="syrup-check" class="filler-lable">сиропы</label>
+			  					</div>
+			  				<div class="filler-checkbox">
+			  					<input type="checkbox" name="jam" id="jam-check">
+			  					<label for="jam-check" class="filler-lable">джемы</label>
+		  					</div>
+	  					</div>
   				</div>
-  				<input type="submit" name="btn" value="Применить">
+  				<input class="filter-btn" type="submit" name="btn" value="Применить">
   			</form>
   		</div>
   		<div class="product">
@@ -298,18 +324,32 @@
 	        	<a class="quick-view btn" href="#">Быстрый просмотр</a>
 	        </div>	
   		</div>
-  		<div class="paginator">
-  			<a class="prew" href="#"></a>
-  			<a href="#">1</a>
-  			<a href="#">2</a>
-  			<a href="#">3</a>
-  			<a href="#">4</a>
-  			<a href="#">5</a>
-  			<a class="next" href="#"></a>
-  		</div>
+  		<ul class="paginator">
+  			<li>
+	  			<a class="prev" href="#"></a>
+	  		</li>
+	  		<li>	
+	  			<a class="current" href="#">1</a>
+	  		</li>
+	  		<li>	
+	  			<a href="#">2</a>
+	  		</li>
+	  		<li>	
+	  			<a href="#">3</a>
+	  		</li>
+	  		<li>	
+	  			<a href="#">4</a>
+	  		</li>
+	  		<li>	
+	  			<a href="#">5</a>
+	  		</li>
+	  		<li>	
+	  			<a class="next" href="#"></a>
+	  		</li>	
+  		</ul>
   	</main>
   	<footer class="main-footer">
-      <div class="container clearfix">
+      <div class="container clearfix second-footer">
         <section class="footer-social">
           <a class="social-btn social-btn-twitter" href="#"></a>
           <a class="social-btn social-btn-instagram" href="#"></a>

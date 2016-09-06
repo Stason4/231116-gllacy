@@ -253,15 +253,6 @@
   				<a class="contact-btn btn" href="#">Форма обратной связи</a>
   			</div>
   		</div>
-      <div class="contact-form">
-        <form action="/" method="post">
-          <h2 class="contect-form-name">Мы обязательно вам ответим</h2></br>
-          <input type="text" name="contact-form-name" placeholder="Как вас зовут"></br>
-          <input type="text" name="contact-form-mail" placeholder="Ваша почта для ответа?"></br>
-          <textarea rows="5" placeholder="Напишите что-нибудь..."></textarea><br>
-          <input type="submit" name="contact-ansver" value="Отправить">
-        </form>
-      </div>
   	</main>
   	<footer class="main-footer">
   		<div class="container clearfix">
@@ -287,6 +278,16 @@
   			</section>
   		</div>
   	</footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form class="contact-form" action="/" method="post">
+          <h2 class="contact-form-name">Мы обязательно вам ответим!</h2></br>
+          <input type="text" name="contact-form-name" placeholder="Как вас зовут?"></br>
+          <input type="text" name="contact-form-mail" placeholder="Ваша почта для ответа?"></br>
+          <textarea class="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea><br>
+          <input class="modal-btn btn" type="submit" name="contact-ansver" value="Отправить">
+        </form>
+    </div>
     </div>
     </div>
   </body>
