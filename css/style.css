@@ -812,17 +812,21 @@ caption{
 }
 
 .feature{
-	width: 1106px;
+	width: 1127px;
 	height: 282px;
 	border-radius: 20px;
 	margin-bottom: 40px;
 	padding-left: 19px;
 	padding-top: 23px;
-	padding-right: 23px;
+	padding-right: 0;
 	background: url("../img/wafer.png");
 }
 
 .feature h2{
+	margin: 0;
+}
+
+.feature p{
 	margin: 0;
 	padding: 0;
 }
@@ -834,25 +838,27 @@ caption{
 	font-family: "Roboto", Arial, sans-serif;
 }
 
-.feature-discription{
+.feature .feature-discription{
 	position: relative;
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5650;
-	width: 484px;
+	width: 479px;
 	min-height: 56px;
-	padding-left: 56px;
+	padding-left: 55px;
+	margin-right: 29px;
+	margin-top: 22px;
 	float: left;
-	vertical-align: top;
 	font-family: "Roboto Regular", Arial, sans-serif;
 }
+ 
 
 .ice-icon::before{
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: -3px;
-	width: 534px;
+	top: -11px;
+	left: 2px;
+	width: 47px;
 	height: 47px;
 	background: url("../img/3ice-icon.svg") no-repeat;
 }
@@ -860,8 +866,8 @@ caption{
 .cow-icon::before{
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -12px;
+	left: 4px;
 	width: 47px;
 	height: 47px;
 	background: url("../img/1cow.svg");
@@ -870,8 +876,8 @@ caption{
 .leaf-icon::before{
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -11px;
+	left: 2px;
 	width: 47px;
 	height: 47px;
 	background: url("../img/4leaf.svg");
@@ -880,8 +886,8 @@ caption{
 .thermometer-icon::before{
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -12px;
+	left: 4px;
 	width: 47px;
 	height: 47px;
 	background: url("../img/2thermometer.svg");
@@ -945,14 +951,14 @@ caption{
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5a5a;
-	margin-bottom: 39px; 
+	margin-bottom: 34px; 
 }
 
 .distribution input[type=submit]{
 	border: none;
 	outline: none;
 	max-width: 130px;
-	padding: 10px 20px;
+	padding: 10px 15px;
 }
 
 .distribution input[type=text]{
