@@ -48,7 +48,7 @@ body > input[type="radio"] {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 
   font-weight: 800;
   font-size: 60px;
@@ -57,10 +57,10 @@ body > input[type="radio"] {
 
 .slide-btn {
   display: inline-block;
-  padding: 12px 50px;
-  margin-bottom: 35px;
+  padding: 12px 40px;
+  margin-bottom: 40px;
   font-weight: 600;
-  font-size: 31px;
+  font-size: 32px;
   line-height: 41px;
   vertical-align: top;
   color: #ffffff;
@@ -91,7 +91,7 @@ body > input[type="radio"] {
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 61px;
   left: 0;
   z-index: 20;
 
@@ -159,6 +159,8 @@ body > input[type="radio"] {
 
 .logo{
 	float: left;
+	margin-left: -9px;
+  padding-top: 9px;
 	padding-top: 10px;
 	width: 160px;
 }
@@ -183,8 +185,8 @@ body > input[type="radio"] {
 .main-menu{
 	margin: 0;
 	padding: 0;
-	padding-top: 22px;
-	padding-left: 15px; 
+	padding-top: 21px;
+	padding-left: 13px; 
 	list-style: none;
 	font-size: 0;
 }
@@ -295,7 +297,7 @@ li:hover .navigation-submenu{
 	padding: 0;
 }
 
-.user-block li{
+.user-block .wrapper{
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -309,7 +311,7 @@ li:hover .navigation-submenu{
 .user-block .user-menu{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	list-style: none;
 	font-size: 0;
 }
@@ -510,7 +512,7 @@ li:hover .navigation-submenu{
 	content: "";
 	position: absolute;
 	top: 7px;
-	left: 20px;
+	left: 18px;
 	background: #b0c0b7 url("../img/7basket.svg") no-repeat;
 	color: #ffffff;
 	width: 22px;
@@ -669,11 +671,11 @@ caption{
 
 .left-banner{
 	width: 520px;
-	min-height: 192px;
+	min-height: 196px;
 	float: left;
 	margin-right: 26px;
 	margin-bottom: 40px;
-	padding: 19px 20px;
+	padding: 17px 20px;
 	background: url("../img/raspberries-background.jpg");
 	border-radius: 20px;
 	position: relative;
@@ -688,6 +690,7 @@ caption{
 }
 
 .banner-discpription{
+	margin-top: 15px; 
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
@@ -697,10 +700,10 @@ caption{
 
 .right-banner{
 	width: 520px;
-	height: 192px;
+	height: 196px;
 	float: left;
 	margin-bottom: 40px;
-	padding: 19px 20px;
+	padding: 17px 20px;
 	background: url("../img/chokolate-background.jpg");
 	border-radius: 20px;
 	position: relative;
@@ -711,7 +714,7 @@ caption{
 	position: absolute;
 	bottom: 23px;
 	right: 21px;
-	padding: 10px 25px;
+	padding: 11px 21px;
 }
 
 .product{
@@ -779,8 +782,8 @@ caption{
 .product-title{
 	position: absolute;
 	min-height: 44px;
-	margin: 7px 0 0;
-	padding: 0 5px;
+	margin-top: 9px;
+	padding: 0 8px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -810,10 +813,12 @@ caption{
 
 .feature{
 	width: 1106px;
-	height: 248px;
+	height: 282px;
 	border-radius: 20px;
 	margin-bottom: 40px;
-	padding: 26px 20px;
+	padding-left: 19px;
+	padding-top: 23px;
+	padding-right: 23px;
 	background: url("../img/wafer.png");
 }
 
@@ -826,26 +831,30 @@ caption{
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 .feature-discription{
 	position: relative;
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5650;
 	width: 484px;
-	min-height: 85px;
+	min-height: 56px;
 	padding-left: 56px;
-	display: inline-block;
+	float: left;
 	vertical-align: top;
-	margin-left: 6px;
+	font-family: "Roboto Regular", Arial, sans-serif;
 }
 
 .ice-icon::before{
 	content: "";
 	position: absolute;
 	top: -10px;
-	left: 0;
-	width: 47px;
+	left: -3px;
+	width: 534px;
 	height: 47px;
-	background: url("../img/3ice-icon.svg");
+	background: url("../img/3ice-icon.svg") no-repeat;
 }
 
 .cow-icon::before{
@@ -1044,6 +1053,7 @@ caption{
 
 .social-btn-twitter:hover{
 	background: url("../img/12twitter.svg") no-repeat 50% 50%;
+	transition: 0.5s;
 }
 
 .social-btn-instagram{
@@ -1053,6 +1063,7 @@ caption{
 
 .social-btn-instagram:hover{
 	background: url("../img/14instagram.svg") no-repeat 50% 50%;
+	transition: 0.5s;
 }
 
 .social-btn-facebook{
@@ -1061,6 +1072,7 @@ caption{
 
 .social-btn-facebook:hover{
 	background: url("../img/8fb.svg") no-repeat 50% 50%;
+	transition: 0.5s;
 }
 
 .social-btn-vk{
@@ -1070,13 +1082,14 @@ caption{
 
 .social-btn-vk:hover{
 	background: url("../img/13vk.svg") no-repeat 50% 50%;
+	transition: 0.5s;
 }
 
 .social-info{
 	float: left;
 	width: 335px;
 	min-height: 60px;
-	padding-top: 36px;
+	padding-top: 29px;
 }
 
 .social-info a{
@@ -1115,7 +1128,7 @@ caption{
 
 .made-in{
 	width: 196px;
-	padding-top: 20px;
+	padding-top: 17px;
 	float: right;
 }
 
@@ -1192,13 +1205,14 @@ caption{
 	line-height: 41px;
 	font-weight: bold;
 	color: #ffffff;
-	margin-top: 6px;
+	margin-top: 3px;
 	margin-bottom: 33px;
 }
 
 .filter{
 	width: 1146px;
-	margin-bottom: 34px;
+	margin-bottom: 25px;
+	margin-top: -7px;
 }
 
 .filter-form div{
@@ -1291,7 +1305,7 @@ caption{
 .fatness{
 	width: 415px;
 	height: 35px;
-	padding-left: 15px;
+	padding-left: 10px;
 	padding-top: 8px;
 	background: #a9b9af;
   box-sizing: border-box;
@@ -1323,7 +1337,7 @@ caption{
 	content: "";
 	position: absolute;
 	top: 5px;
-	left: 0;
+	left: -5px;
 }
 
 .fatness-lable::before{
@@ -1333,7 +1347,7 @@ caption{
 	height: 18px;
 	top: 0;
 	z-index: 50;
-	left: -5px;
+	left: -10px;
 	border-radius: 50%;
 	background-color: transparent;
 	border: 1px solid #f8f7f4;
@@ -1373,7 +1387,7 @@ input[type="radio"]:checked ~ .fatness-lable::after{
   margin: 0;
   padding: 0;
   margin-left: 15px;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 
 .filler-checkbox{
@@ -1429,8 +1443,8 @@ input[type="radio"]:checked ~ .fatness-lable::after{
 	border-radius: 20px;
 	border: 1px solid #ffffff;
 	padding: 8px 29px;
-	margin-top: 19px;
-  margin-left: -17px;
+	margin-top: 24px;
+  margin-left: -19px;
   outline: none;
 }
 
@@ -1448,12 +1462,12 @@ input[type="radio"]:checked ~ .fatness-lable::after{
 .paginator{
 	float: right;
 	width: 189px;
-	margin-bottom: 30px;
-	margin-top: 79px;
+	margin-bottom: 13px;
+	margin-top: 39px;
 }
 
 .paginator a{
-	padding: 6px 10px;
+	padding: 4px 9px;
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 16px;
@@ -1465,11 +1479,11 @@ input[type="radio"]:checked ~ .fatness-lable::after{
 	border-radius: 50%;
 }
 
-.paginator a:hover{
+.paginator .pages:hover{
 	background: #9db1a5;
 }
 
-.paginator a:active{
+.paginator .pages:active{
 	background: #ffffff;
 	color: black;
 }
@@ -1496,14 +1510,14 @@ input[type="radio"]:checked ~ .fatness-lable::after{
 }
 
 .paginator .next::before{
-	top: -19px;
-	left: 190px;
+	top: -22px;
+	left: 178px;
 	transform: rotate(225deg);
 }
 
 .paginator .prev::before{
-	top: 2px;
-	left: 0;
+	top: -1px;
+	left: 1px;
 	transform: rotate(45deg);
 }
 
